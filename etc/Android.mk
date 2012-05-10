@@ -11,7 +11,7 @@ $(foreach m,$(permisson-files),\
 	$(eval LOCAL_MODULE_CLASS := ETC) \
 	$(eval LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/permissions/) \
 	$(eval LOCAL_SRC_FILES := $(m)) \
-	$(eval GMS_BASE:$(LOCAL_MODULE)) \
+	$(eval gms_base:$(LOCAL_MODULE)) \
 	$(eval include $(BUILD_PREBUILT)) \
 	$(eval m := ) \
 )

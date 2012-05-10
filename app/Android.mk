@@ -15,7 +15,7 @@ $(foreach m, $(all-google-apks), \
 	$(eval LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)) \
 	$(eval LOCAL_CERTIFICATE := PRESIGNED) \
 	$(eval LOCAL_SRC_FILES := $(m)) \
-	$(eval GMS_BASE:$(LOCAL_MODULE)) \
+	$(eval gms_base:$(LOCAL_MODULE)) \
 	$(eval include $(BUILD_PREBUILT)) \
 	$(eval m := ) \
 )

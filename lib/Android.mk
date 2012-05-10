@@ -10,7 +10,7 @@ $(foreach m,$(google-shared-libs),\
 	$(eval LOCAL_MODULE_TAGS := optional) \
 	$(eval LOCAL_MODULE_CLASS := SHARED_LIBRARIES) \
 	$(eval LOCAL_SRC_FILES := $(m)) \
-	$(eval GMS_BASE:$(LOCAL_MODULE)) \
+	$(eval gms_base:$(LOCAL_MODULE)) \
 	$(eval include $(BUILD_PREBUILT)) \
 	$(eval m := ) \
 )
