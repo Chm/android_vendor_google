@@ -12,6 +12,12 @@ gms_maps: gms_base
 .PHONY: gms_market
 gms_market: gms_base
 
+.PHONY: gms_talk
+gms_talk: gms_base
+
+.PHONY: gms_tts
+gms_tts: gms_base
+
 .PHONY: gms_voicesearch
 gms_voicesearch: gms_base
 
